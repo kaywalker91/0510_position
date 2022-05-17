@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <title>position관련 스타일 연습</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="김대각" />
+        <meta name="keywords" content="position,css,html" />
+        <meta name="description" content="css에서 대상의 위치를 지정할 수 있는 position스타일에 대한 연습" />
+        <link href="css/common.css" rel = "stylesheet" />
+    </head>
+
+    <body>
+
+        <header>
+            <h1>로고</h1>
+            <nav>메뉴바</nav>
+        </header>
+        </br></br></br></br>
+
+        <div class="box">
+            <div class="imgbox">
+                <img src="images/pic1.jpg" alt="남매"/>
+                <div class="plus">+</div>
+            </div>
+            <div class="txtbox">
+                다정한 남매의 모습
+            </div>
+        </div>
+        </br>
+        
+        <p>
+            빨간맛 궁금해 허니 새콤한 그 스트로베리 그 맛</br>
+            빨간맛 궁금해 허니 새콤한 그 스트로베리 그 맛</br>
+            빨간맛 궁금해 허니 새콤한 그 스트로베리 그 맛</br>
+            빨간맛 궁금해 허니 새콤한 그 스트로베리 그 맛</br>
+            빨간맛 궁금해 허니 새콤한 그 스트로베리 그 맛</br>
+            빨간맛 궁금해 허니 새콤한 그 스트로베리 그 맛</br>
+            </br>
+
+            -static</br>
+            position을 아예 언급하지 않은 경우</br>
+            위치는 가족관계에 따라 정해짐</br>
+            기본적으로 다른요소와 겹쳐진다는 개념이 없음</br>
+            </br>
+
+            -relative</br>
+            left,top,right,bottom등으로 움직일 수 있음</br>
+            움직일때 위치 기준이 자신이 있던 자리</br>
+            자신이 원래 위치하던 자리를 지킴</br>
+            z-index를 사용할 수 있음</br>
+            후손 중에 absolute/fixed가 있으면 자신이 그 녀셕의 위치 기준이 된다</br>
+            </br>
+
+            -absolute</br>
+            left,top,right,bottom등으로 움직일 수 있음</br>
+            움직일때 위치 기준이 브라우저의 가장자리</br>
+            가장 가까운 조상중에 relative/absolute/fixed가 있으면 그 조상님을 기준으로 움직임</br>
+            자신이 원래 위치하던 자리를 안지킴</br>
+            z-index를 사용할 수 있음</br>
+            후손 중에 absolute/fixed가 있으면 자신이 그 녀셕의 위치 기준이 된다</br>
+            </br>
+            
+            -fixed</br>
+            absolute와 비슷</br>
+            움직일때 위치 기준이 무조건 화면 끄트머리</br>
+            가장 가까운 조상이 있어도 무시</br>
+            스크롤바의 영향을 받지 않는다 </br>
+            </br></br></br></br>
+    
+        </p>
+
+    
+    </body>
+</html>
